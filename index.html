@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Create Post</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Create New Post</h2>
+    <form method="POST" action="/create" enctype="multipart/form-data">
+      <label>Title</label>
+      <input type="text" name="title" required>
+
+      <label>Content</label>
+      <textarea name="content" rows="6" required></textarea>
+
+      <label>Upload Image</label>
+      <input type="file" name="image" accept="image/*">
+
+      <button type="submit">Publish</button>
+    </form>
+    <br>
+    <a href="/">← Back</a>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
